@@ -29,7 +29,7 @@ class CandidateEmail:
         time.sleep(5)
         self.driver.switch_to_frame(self.driver.find_element_by_xpath(self.emailIframe))
         
-        self.driver.find_element_by_xpath(self.EmailBody).send_keys(body)       
+        self.driver.find_element_by_xpath(self.EmailBody).send_keys(body)   
         self.driver.switch_to_default_content()
         time.sleep(5)
       
@@ -45,7 +45,7 @@ class CandidateEmail:
         self.driver.find_element_by_xpath(self.AddCCTextBox).send_keys(CCemail)   
         time.sleep(2)
         self.driver.find_element_by_xpath(self.AddCCTextBox).send_keys(Keys.ENTER)
-        
+    
         time.sleep(2)
         
     def ClickAddCCEmailValue(self):
